@@ -8,13 +8,11 @@ btn.addEventListener( 'click', () => {
     // console.log(document.body)
 
     const randomNumber = getRandomNumber();
-    console.log(randomNumber);
+    // console.log(randomNumber);
 
     document.body.style.backgroundColor = colors[randomNumber];
     color.textContent = colors[randomNumber];
 
 });
 
-const getRandomNumber = () => {
-    return Math.random();
-}
+const getRandomNumber = () => Math.floor(Math.random() * colors.length);
