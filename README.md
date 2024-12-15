@@ -1,1 +1,1 @@
-# 40-projects-js
+# projects-js-and-ts
