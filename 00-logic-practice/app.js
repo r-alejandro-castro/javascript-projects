@@ -113,6 +113,99 @@
 
 /* 6) Hacer una función que, dado como dato de entrada nuestra fecha de cumpleaños, nos diga cuantos días faltan para el mismo.*/
 
-const ejercicioSeis = () => {
+// const ejercicioSeis = (a) => {
+//     const cumple = new Date(a);
+//     const day = new Date();
+//     const diasRestantes = Math.floor((cumple.getTime() - day.getTime()) / (1000 * 60 * 60 * 24));
+//     console.log(`El resto de días son ${diasRestantes}`);
+// };
+
+// ejercicioSeis('13 dec 2025');
+
+// -----------------------------------------------------
+
+/* 7) Realizar una función que, dado como dato de entrada una oración, nos devuelva un arreglo que contenga todas las palabras usadas en la oración. */
+
+// const ejercicioSiete = (text = "Hola mundo") => {
+//     const word = text.split("");
+//     console.log(word)
+// }
+
+// ejercicioSiete()
+
+// -----------------------------------------------------
+
+/* 8) Crea 5 objetos y almacénalos en un arreglo, debes hacer una función para filtrar a todas las personas que tengan el nombre Luis y que esa misma función también muestre cuales son mayores de edad. */
+
+// const names = [
+//     { name: "Luis", apellido: "Contreras",  age: 25 },
+//     { name: "Maria", apellido: "Hernan", age: 18 },
+//     { name: "Juan",  apellido: "Rojas", age: 15 },
+//     { name: "Pedro", apellido: "Mejias",age: 40 },
+//     { name: "Carlos", apellido: "Castro",age: 16 },
+// ];
+
+// const ejercicioOcho = () => {
+//     const persona = names
+//     const filter = persona.filter((el) => {
+//         if (el.name === "Luis") console.log(`El nombre es ${el.name} ${el.apellido}`)
+//     });
+//     const filterage = persona.filter((age) => {
+//         if (age.age >= 18) console.log(`Las personas mayores de edad son ${age.name} ${age.apellido}`)
+//     });
+// }
+
+// ejercicioOcho()
+
+// -----------------------------------------------------
+
+/* 9) Realizar una función que nos diga la fecha de apertura de un examen de la universidad, es decir, la cantidad de horas restantes que faltan para que abra dicho examen. En caso de que el examen haya cerrado que nos retorne un mensaje que diga “El examen ya cerró”. */
+
+// const ejercicioNueve = (open = "", close = "") => {
+//     if (open === '' || close === '') return console.error("Faltan parametros");
+//     else {
+//         const today = new Date();
+//         const openDate = new Date(open);
+//         const closeDate = new Date(close);
+        
+//         const resultTimeOpen = Math.floor((closeDate.getTime() - openDate.getTime()) / (1000 * 60 * 60));
+//         const resultTimeClose = Math.floor((openDate.getTime() - today.getTime()) / (1000 * 60 * 60));
+
+//         if (closeDate.getTime() < today.getTime()) console.log("El examen ya cerró");
+//         else {
+//             if (resultTimeOpen > 0) console.log(`Quedan ${resultTimeOpen} horas para que el examen se abra`);
+//             else {
+//                 console.log("El examen esta abierto");
+//                 console.log(`Quedan ${resultTimeClose} horas`);
+//             }
+//         }
+//     }
+// }
+
+// ejercicioNueve('Wed Feb 20 2025 08:00','Wed Feb 20 2025 09:00');
+
+// ----------------------------------------------
+
+/* 10) En un arreglo tenemos varios valores numéricos, debemos de hacer una función que nos elimine aquellos valores que se encuentran repetidos.*/
+
+// const numbers = [1,3,4,3,5,4,7,8,2,0,2]
+
+// const ejercicioDiez = (numbers) => {
+
+//     // Ordenar los números
+//     const number = numbers.sort((a, b) => a - b);
     
-}
+//     // Primer método: Usando filter y indexOf
+//     const result = number.filter((item, index) => {
+//         return number.indexOf(item) === index
+//     })
+//     console.log(`Arreglo original: ${number}`)
+//     console.log(result)
+    
+//    // Segundo método: Usando Set (mas recomendado)
+//     const newNumbers = new Set(number);
+//     const result2 = [...newNumbers];
+//     console.log(result2);
+// }
+
+// ejercicioDiez(numbers)
