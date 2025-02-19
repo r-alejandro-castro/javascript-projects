@@ -90,8 +90,29 @@
 
 // ejercicioCuatro();
 
+// -----------------------------------------------------
+
 /* 5) Hacer una función que haga de forma aleatoria un número entre 1 y 1000, y que a ese número le saqué su mitad, el doble y su raíz cuadrada. */
 
-const ejercicioCinco = () => {
-    let numero = Math.floor(Math.random() * 1000) + 1;
+// const ejercicioCinco = () => {
+//     const numero = Math.floor(Math.random() * (1000 - 1)) + 1;
+//     const number = {
+//         numero: numero,
+//         mitad: numero / 2,
+//         doble: numero * 2,
+//         raiz: Math.sqrt(numero)
+//     };
+//     console.log(number);
+//     console.log(`El numero es ${numero}`);
+//     console.log(`La mitad es ${number.mitad}, el doble es ${number.doble} y la raíz cuadrada es ${number.raiz}`);
+// };
+
+// ejercicioCinco();
+
+// -----------------------------------------------------
+
+/* 6) Hacer una función que, dado como dato de entrada nuestra fecha de cumpleaños, nos diga cuantos días faltan para el mismo.*/
+
+const ejercicioSeis = () => {
+    
 }
